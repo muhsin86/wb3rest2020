@@ -13,9 +13,9 @@ session_start();
 		});
 
 // Create local connection 
-// $conn = new mysqli('studentmysql.miun.se', 'momo1600', 'mg7xuf28', 'momo1600');
+  $conn = new mysqli('studentmysql.miun.se', 'momo1600', 'mg7xuf28', 'momo1600');
 // Create local connection 
-   $conn = new mysqli('localhost', 'root', '', 'webb3project');
+  // $conn = new mysqli('localhost', 'root', '', 'webb3project');
 
 // Check connection
 if ($conn->connect_error) {

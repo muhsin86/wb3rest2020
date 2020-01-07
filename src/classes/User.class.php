@@ -3,8 +3,8 @@
 
 class User {
     function __construct() {
-      $this->db = new mysqli('localhost', 'root', '', 'webb3project');
-      //$this->db = new mysqli('studentmysql.miun.se', 'momo1600', 'mg7xuf28', 'momo1600');
+      //$this->db = new mysqli('localhost', 'root', '', 'webb3project');
+      $this->db = new mysqli('studentmysql.miun.se', 'momo1600', 'mg7xuf28', 'momo1600');
         if($this->db->connect_errno > 0) {
             die('Fel vid anslutning [' . $this->db->connect_error . ']');
         }
